@@ -4,6 +4,7 @@
     "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
     "main": "index.js",
     "scripts": {
+        "now-build": "npm run build",
         "build": "webpack",
         "lint": "standard",
         "lint-fix": "standard --fix",
