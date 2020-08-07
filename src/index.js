@@ -5,7 +5,7 @@ import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
 
 const client = new ApolloClient({
-  uri: 'https://curso-platzi-react-avanzado.maria-perez123.vercel.app/graphql'
+  uri: 'https://curso-platzi-react-avanzado-kiau0z6n2.vercel.app/graphql'
 })
 
 ReactDOM.render(
