@@ -8,7 +8,7 @@
         "build": "webpack",
         "lint": "standard",
         "lint-fix": "standard --fix",
-        "dev": "webpack-dev-server",
+        "dev": "webpack-dev-server --history-api-fallback",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -35,6 +35,7 @@
     },
     "dependencies": {
         "@apollo/react-hooks": "^4.0.0",
+        "@reach/router": "^1.3.4",
         "apollo-boost": "^0.4.9",
         "graphql": "^15.3.0",
         "intersection-observer": "^0.11.0",

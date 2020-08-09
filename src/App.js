@@ -1,25 +1,23 @@
 import React from 'react'
 import { GlobalStyles } from './Styles/GlobalStyles'
-import { ListOfCategories } from './components/ListOfCategories'
-import { ListOfPhotoCards } from './container/ListOfPhotoCards'
 import { Logo } from './components/Logo'
-import { PhotoCardWithQuery } from './container/PhotoCardWithQuery'
+import { Home } from './pages/Home'
+import { Router } from '@reach/router'
+import { Detail } from './pages/Detail'
+import { NavBar } from './components/NavBar'
 
 export const App = () => {
-  const urlParams = new window.URLSearchParams(window.location.search)
-  const detailId = urlParams.get('detail')
   return (
 
     <div>
       <GlobalStyles />
       <Logo />
-      {
-        detailId
-          ? <PhotoCardWithQuery id={detailId} />
-          : <><ListOfCategories />
-            <ListOfPhotoCards categoryId={2} />
-          </>
-      }
+      <Router>
+        <Home path='/' />
+        <Home path='/pet/:categoryId' />
+        <Detail path='/detail/:detailId' />
+      </Router>
+      <NavBar />
     </div>
 
   )
