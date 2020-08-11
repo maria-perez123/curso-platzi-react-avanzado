@@ -10,7 +10,7 @@
         "lint-fix": "standard --fix",
         "dev": "webpack-dev-server --history-api-fallback",
         "serve:dev": "webpack --mode 'development' && npx serve dist -s",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "cypress open"
     },
     "repository": {
         "type": "git",
@@ -28,6 +28,7 @@
         "@babel/preset-env": "^7.11.0",
         "@babel/preset-react": "^7.10.4",
         "babel-loader": "^8.1.0",
+        "cypress": "^4.12.1",
         "html-webpack-plugin": "^4.3.0",
         "standard": "^14.3.4",
         "webpack": "^4.44.1",
